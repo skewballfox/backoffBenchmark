@@ -4,7 +4,7 @@ A simulation of multiple backoff protocols for the purpose of comparing their la
 
 ## About the Simulation code
 
-For the simulation, Time is assumed to be discretized, i.e. divided into individual blocks,  called slots. A group of $N$ contiguous slots compose a window of size $n$. the slots currently available for use can exist in 3 states:
+For the simulation, Time is assumed to be discretized, i.e. divided into individual blocks,  called slots. A group of `n` contiguous slots compose a window (of size `n`). the slots currently available for use can exist in 3 states:
 - `Empty` when no packet has arrived in this slot
 - `Occupied` when exactly 1 packet has arrived in this slot
 - `Collision` when more than one packet has arrived in this slot
